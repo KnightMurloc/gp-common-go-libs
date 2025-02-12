@@ -31,7 +31,7 @@ $(GINKGO):
 	go install github.com/onsi/ginkgo/v2/ginkgo@v2.13.0
 
 unit: $(GINKGO)
-		ginkgo -cover -r --keep-going --randomize-suites --randomize-all \
+		ginkgo --cover -r --keep-going --randomize-suites --randomize-all \
 			cluster \
 			conv \
 			dbconn \
